@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 
-def uppercase(str):
-    """
-    Prints the input string in uppercase followed by a new line.
-    Only lowercase letters are converted; other characters remain unchanged.
-    """
+def uppercase(text):
     result = ""
     for char in str:
         code = ord(char)
@@ -15,3 +11,4 @@ def uppercase(str):
             result += char
     # Print using string format
     print("{}".format(result))
+
