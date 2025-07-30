@@ -11,7 +11,7 @@ headers = {
 }
 req = urllib.request.Request(url, headers=headers)
 
-with urllib.request.urlopen(url) as response:
+with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
     body = response.read()
     print("Body response:")
     print("\t- type: {}".format(type(body)))
